@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "PKMODEL"
+version = 1.0
+description = "2 compartment subcut and IV bolus PK model."
+readme = "README.md"
+licenses = [{file = LICENSE.txt, text = "MIT license"}]
+maintainers = [{name = Sanaz Kazeminia", email = sanaz.kazeminia@dtc.ox.ac.uk}]
+url = "https://github.com/SanazKaz/self.project"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "scipy"
+]
+optional-dependencies = {
+    "docs": [
+        "sphinx>=1.5, !=1.7.3",
+        "sphinx_rtd_theme"
+    ],
+    "dev": [
+        "flake8>=3"
+    ]
+}
